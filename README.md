@@ -42,7 +42,7 @@ All config files are located at:
 C:\hadoop\etc\hadoop
 Edit the following files using Notepad++:
 
-4.1 core-site.xml
+## 4.1 core-site.xml
 <configuration>
     <property>
         <name>fs.defaultFS</name>
@@ -51,7 +51,7 @@ Edit the following files using Notepad++:
 </configuration>
 
 
-4.2 mapred-site.xml
+## 4.2 mapred-site.xml
 Create mapred-site.xml if not present.
 <configuration>
     <property>
@@ -60,7 +60,7 @@ Create mapred-site.xml if not present.
     </property>
 </configuration>
 
-5. Create Data Directories
+## 5. Create Data Directories
 
 Create folder:
 C:\hadoop\data
@@ -69,7 +69,7 @@ Inside it create:
 C:\hadoop\data\namenode
 C:\hadoop\data\datanode
 
-6. hdfs-site.xml
+## 6. hdfs-site.xml
 <configuration>
     <property>
         <name>dfs.replication</name>
@@ -87,7 +87,7 @@ C:\hadoop\data\datanode
     </property>
 </configuration>
 
-7. yarn-site.xml
+## 7. yarn-site.xml
 <configuration>
     <property>
         <name>yarn.nodemanager.aux-services</name>
@@ -100,11 +100,11 @@ C:\hadoop\data\datanode
     </property>
 </configuration>
 
-8. hadoop-env.cmd
+## 8. hadoop-env.cmd
 Replace %JAVA_HOME% with your Java path:
 set JAVA_HOME=C:\Java\jdk1.8.0_181
 
-9. Add Windows-Specific Hadoop Binaries
+## 9. Add Windows-Specific Hadoop Binaries
 
 Hadoop requires Windows native files.
 
@@ -115,18 +115,18 @@ Extract and copy the bin folder.
 Replace this folder:
 C:\hadoop\bin
 
-10. Verify Hadoop Installation
+## 10. Verify Hadoop Installation
 
 Check Hadoop version:
 hadoop version
 
 If you see no errors → Hadoop is installed successfully.
 
-11. Format Hadoop NameNode
+## 11. Format Hadoop NameNode
 
 Run:hdfs namenode -format
 
-12. Start Hadoop Services
+## 12. Start Hadoop Services
 
 Open CMD → go to:
 cd C:\hadoop\sbin
@@ -139,7 +139,7 @@ start-yarn.cmd
 
 Ensure all 4 Hadoop windows are running.
 
-13. Access Hadoop Web Interfaces
+## 13. Access Hadoop Web Interfaces
 Resource Manager (YARN UI)
 
 http://localhost:8088/cluster
