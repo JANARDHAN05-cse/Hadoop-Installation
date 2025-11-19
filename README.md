@@ -1,20 +1,22 @@
-# BDA-EXP1 Hadoop-Installation
+# Hadoop Installation on Windows – Complete Step-by-Step Guide
 
-## 1. Prerequisite  
-To install Hadoop, you should have Java version 1.8 in your system.
+## 1. Prerequisite
+You must have **Java JDK 1.8** installed.
 
-## 2. Check your Java version  
-### • `java –version`
-
-<img width="466" height="231" alt="Picture 1" src="https://github.com/user-attachments/assets/90658bef-6bdc-4bcf-9e09-77f7341cd31d" />
-
----
-
-## 3. Install Java (If Not Installed)
-
-Download Java JDK 1.8 from the link below:
+Check your Java version in CMD:
+```bash
+java -version
+If Java is not installed, download JDK 1.8 from Oracle:
 
 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
-Download the file as per your OS and place Java directly in:
+Download and extract Java into:
+C:\Java\jdk1.8.0_181
+(Do NOT install inside Program Files.)
+2. Download Hadoop
 
+Download Hadoop 3.1.3 from:
+
+https://hadoop.apache.org/releases.html
+
+Extract it to:
